@@ -4,9 +4,9 @@ const StateContext = createContext();
 
 export const ContextProvider = ({ children }) => {
 
-    const _endPoint="http://192.168.0.100/root/api/rva_parking2/";  
+    const _endPoint="http://192.168.0.101/root/api/rva_parking2/";  
     // const _endPoint="http://localhost/root/api/rva_parking2/";  
-    const pathPrint="http://localhost:3003/";
+    const pathPrint="http://192.168.0.101:3003/";
     
     //const _endPoint="http://192.168.0.100/root/api/rva_parking/";
     //const pathPrint="http://192.168.0.100:3001/";

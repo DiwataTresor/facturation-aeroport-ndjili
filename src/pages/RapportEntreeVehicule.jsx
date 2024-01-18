@@ -97,7 +97,7 @@ const RapportEntreeVehicule = () => {
                 <div className="flex justify-between">
                   <div>
                     Total vehicules :{" "}
-                    <Badge count={vehiculesFactures?.length || 0} /> 
+                    <span className="bg-red-700 text-white">{vehiculesFactures?.length || 0}</span>
                   </div>
                 </div>
                 <Spin spinning={spinning}>

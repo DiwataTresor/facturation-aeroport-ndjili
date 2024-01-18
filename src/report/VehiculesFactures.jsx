@@ -112,7 +112,7 @@ const VehiculesFactures = () => {
                 <div className="flex justify-between">
                   <div>
                     Total tickets :{" "}
-                    <Badge count={vehiculesFactures?.length || 0} /> 
+                    <span className="bg-red-600 text-white rounded-full px-3 py-2">{vehiculesFactures?.length || 0}</span>
                   </div>
                   {vehiculesFactures?.length > 0 && (
                     <div className="cursor-pointer" 
@@ -124,7 +124,7 @@ const VehiculesFactures = () => {
                 <div className="flex justify-between">
                   <div>
                     Montant tickets :{" USD "}
-                    <Badge count={vehiculesFactures?.reduce((i,a)=>{return i+a.Montant},0)|| 0}  />
+                    <span className="bg-red-600 text-white rounded-full px-3 py-2">{vehiculesFactures?.reduce((i,a)=>{return i+a.Montant},0)|| 0}</span>
                   </div>
                 </div>
                 <table className="table-auto w-full items-center mt-4">
@@ -224,7 +224,7 @@ const VehiculesFactures = () => {
                 <div className="flex justify-between">
                   <div>
                     Total tickets :{" "}
-                    <Badge count={vehiculesFacturesParAgent?.length || 0} /> 
+                    <span className="rounded-full text-white bg-red-500 px-3 py-1">{vehiculesFacturesParAgent?.length || 0}</span> 
                   </div>
                   {vehiculesFactures?.length > 0 && (
                     <div className="cursor-pointer" 
@@ -236,7 +236,7 @@ const VehiculesFactures = () => {
                 <div className="flex justify-between">
                   <div>
                     Montant tickets :{" USD "}
-                    <Badge count={vehiculesFacturesParAgent?.reduce((i,a)=>{return i+a.Montant},0)|| 0}  />
+                    <span className="rounded-full text-white bg-red-500 px-3 py-1">{vehiculesFacturesParAgent?.reduce((i,a)=>{return i+a.Montant},0)|| 0}</span>
                   </div>
                 </div>
                 <table className="table-auto w-full items-center mt-4">
